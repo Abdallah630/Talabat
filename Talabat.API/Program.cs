@@ -1,8 +1,11 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Talabat.Repository.Data;
+
 namespace Talabat.API
 {
 	public class Program
 	{
-		public static void Main(string[] args)
+		public static async Task Main(string[] args)
 		{
 			var builder = WebApplication.CreateBuilder(args);
 
@@ -12,10 +15,35 @@ namespace Talabat.API
 			builder.Services.AddControllers();
 			// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 			builder.Services.AddEndpointsApiExplorer();
-			builder.Services.AddSwaggerGen(); 
+			builder.Services.AddSwaggerGen();
+
+			builder.Services.AddDbContext<StoreContext>(options =>
+			{
+				options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+			});
 			#endregion
 
 			var app = builder.Build();
+
+			#region Update Database
+			//Create Scope
+			using var scope = app.Services.CreateScope();
+			//Scope الموجوده جوه ال Service من Object بنستخدمها علشان نعمل
+			var service = scope.ServiceProvider;
+			// Ask CLR for Creating Object from DbContext Explicitly
+			var _dbContext = service.GetRequiredService<StoreContext>();
+			var loggerFactory = service.GetRequiredService<ILoggerFactory>();
+			try
+			{
+				await _dbContext.Database.MigrateAsync();
+			}
+			catch (Exception ex)
+			{
+				var logger = loggerFactory.CreateLogger<Program>();
+				logger.LogError(ex, "an error has been occurred during apply migration");
+			}
+
+			#endregion
 
 			#region Configure Kestrel MidelleWare
 			// Configure the HTTP request pipeline.
