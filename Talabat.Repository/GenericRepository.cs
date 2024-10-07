@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Talabat.Core.Generic.Contract;
 using Talabat.Core.Modules.ProductModule;
+using Talabat.Core.Specification;
 using Talabat.Repository.Data;
 
 namespace Talabat.Repository
@@ -18,14 +20,30 @@ namespace Talabat.Repository
 			_storeContext = storeContext;
 		}
 
-		public Task<IEnumerable<T?>> GetAllAsync()
+		public async Task<IEnumerable<T?>> GetAllAsync()
 		{
-			throw new NotImplementedException();
+			return await _storeContext.Set<T>().ToListAsync();
 		}
 
+		
 		public async Task<T?> GetAsync(int id)
 		{
 			return await _storeContext.FindAsync<T>(id);
+		}
+
+		public async Task<IEnumerable<T>> GetAllWithSpecAsync(ISpecification<T> specification)
+		{
+			return await ApplySpecification(specification).AsNoTracking().ToListAsync();
+		}
+
+		public async Task<T?> GetWithSpecAsync(ISpecification<T> specification)
+		{
+			return await ApplySpecification(specification).FirstOrDefaultAsync();
+		}
+
+		private IQueryable<T> ApplySpecification(ISpecification<T> specification)
+		{
+			return SpecificationEvaluator<T>.GetQuery(_storeContext.Set<T>(), specification);
 		}
 	}
 }
