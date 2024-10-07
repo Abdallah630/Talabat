@@ -71,3 +71,5 @@ C:\Users\dell\source\repos\Talabat\Talabat.API\bin\Debug\net6.0\Talabat.Core.dll
 C:\Users\dell\source\repos\Talabat\Talabat.API\bin\Debug\net6.0\Talabat.Repository.dll
 C:\Users\dell\source\repos\Talabat\Talabat.API\bin\Debug\net6.0\Talabat.Repository.pdb
 C:\Users\dell\source\repos\Talabat\Talabat.API\bin\Debug\net6.0\Talabat.Core.pdb
+C:\Users\dell\source\repos\Talabat\Talabat.API\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\dell\source\repos\Talabat\Talabat.API\bin\Debug\net6.0\Talabat.API.staticwebassets.runtime.json
