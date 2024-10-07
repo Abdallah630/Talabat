@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Talabat.Core.Generic.Contract;
 using Talabat.Core.Modules.ProductModule;
+using Talabat.Core.Specification;
 using Talabat.Repository.Data;
 
 namespace Talabat.API.Controllers
@@ -19,11 +20,19 @@ namespace Talabat.API.Controllers
 			_proRepo = proRepo;
 		}
 
-
 		[HttpGet]
+		public async Task<ActionResult<Products>> GetAll()
+		{
+			var spec = new ProductWithBrandAndCategorySpecification();
+			var product = await _proRepo.GetAllWithSpecAsync(spec);
+			return Ok(product);
+		}
+
+		[HttpGet("{id}")]
 		public async Task<ActionResult<Products>> GetById(int id)
 		{
-			var product = await _proRepo.GetAsync(id);
+			var spec = new ProductWithBrandAndCategorySpecification(id);
+			var product = await _proRepo.GetWithSpecAsync(spec);
 			return Ok(product);
 		}
 	}
