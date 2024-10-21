@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Talabat.API.DTOs;
+using Talabat.API.Error;
 using Talabat.Core.Generic.Contract;
 using Talabat.Core.Modules.ProductModule;
 using Talabat.Core.Specification;
@@ -30,7 +31,9 @@ namespace Talabat.API.Controllers
 			var product = await _proRepo.GetAllWithSpecAsync(spec);
 			return Ok(_mapper.Map<IEnumerable<Products>,IEnumerable<ProductToReturn>>(product));
 		}
-
+		//الممكن يرجع Responseتحديد شكل ال 
+		[ProducesResponseType(typeof(ProductToReturn),StatusCodes.Status200OK)]
+		[ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
 		[HttpGet("{id}")]
 		public async Task<ActionResult<ProductToReturn>> GetById(int id)
 		{

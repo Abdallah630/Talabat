@@ -1,5 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Talabat.API.Error;
+using Talabat.API.Extensions;
 using Talabat.API.Helpers;
+using Talabat.API.Middlewares;
 using Talabat.Core.Generic.Contract;
 using Talabat.Repository;
 using Talabat.Repository.Data;
@@ -16,18 +20,15 @@ namespace Talabat.API
 			#region Configure Service
 			// Add services to the container.
 
-			builder.Services.AddControllers();
-			// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-			builder.Services.AddEndpointsApiExplorer();
-			builder.Services.AddSwaggerGen();
+			builder.Services.AddControllers(); //API Services
+			
+			builder.Services.AddSwaggerServices();
 
 			builder.Services.AddDbContext<StoreContext>(options =>
 			{
 				options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 			});
-
-			builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-			builder.Services.AddAutoMapper(typeof(MappingProfile));
+			builder.Services.AddApplicationServices();
 			#endregion
 
 			var app = builder.Build();
@@ -53,12 +54,12 @@ namespace Talabat.API
 
 			#endregion
 
-			#region Configure Kestrel MidelleWare
+			#region Configure Kestrel Middlewares
+			app.UseMiddleware<ExceptionMiddleware>();
 			// Configure the HTTP request pipeline.
 			if (app.Environment.IsDevelopment())
 			{
-				app.UseSwagger();
-				app.UseSwaggerUI();
+				app.UseSwaggerMiddleware();
 			}
 
 			app.UseHttpsRedirection();

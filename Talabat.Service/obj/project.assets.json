@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\dell\\.nuget\\packages\\": {}
+    "C:\\Users\\Aboda\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dell\\source\\repos\\Talabat\\Talabat.Service\\Talabat.Service.csproj",
+      "projectUniqueName": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj",
       "projectName": "Talabat.Service",
-      "projectPath": "C:\\Users\\dell\\source\\repos\\Talabat\\Talabat.Service\\Talabat.Service.csproj",
-      "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dell\\source\\repos\\Talabat\\Talabat.Service\\obj\\",
+      "projectPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj",
+      "packagesPath": "C:\\Users\\Aboda\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aboda\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -67,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -42,6 +42,15 @@
           "text/json"
         ],
         "StatusCode": 200
+      },
+      {
+        "Type": "Talabat.API.Error.ApiResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
       }
     ]
   },
