@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj",
+      "projectUniqueName": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj",
       "projectName": "Talabat.Service",
-      "projectPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj",
+      "projectPath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj",
       "packagesPath": "C:\\Users\\Aboda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Service\\obj\\",
+      "outputPath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aboda\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -70,5 +70,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Service\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
