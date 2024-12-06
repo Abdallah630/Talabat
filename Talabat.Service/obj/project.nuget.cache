@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aV67JDrF9Q4=",
+  "dgSpecHash": "w2GOdROpeEQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Service\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
