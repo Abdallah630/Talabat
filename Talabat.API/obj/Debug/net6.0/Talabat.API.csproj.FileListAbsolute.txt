@@ -148,3 +148,7 @@ C:\Users\Aboda\source\repos\Abdallah630\Talabat\Talabat.API\obj\Debug\net6.0\sco
 C:\Users\Aboda\source\repos\Abdallah630\Talabat\Talabat.API\obj\Debug\net6.0\Talabat..B9E15ED8.Up2Date
 C:\Users\Aboda\source\repos\Abdallah630\Talabat\Talabat.API\obj\Debug\net6.0\Talabat.API.genruntimeconfig.cache
 C:\Users\Aboda\source\repos\Abdallah630\Talabat\Talabat.API\obj\Debug\net6.0\ref\Talabat.API.dll
+C:\Users\Aboda\Source\Repos\Abdallah630\Talabat\Talabat.API\bin\Debug\net6.0\Talabat.API.staticwebassets.endpoints.json
+C:\Users\Aboda\Source\Repos\Abdallah630\Talabat\Talabat.API\obj\Debug\net6.0\staticwebassets.build.endpoints.json
+C:\Users\Aboda\Source\Repos\Abdallah630\Talabat\Talabat.API\obj\Debug\net6.0\staticwebassets\msbuild.Talabat.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Aboda\Source\Repos\Abdallah630\Talabat\Talabat.API\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt

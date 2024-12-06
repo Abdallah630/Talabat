@@ -11,8 +11,8 @@
 			Errors = new List<string>();
 		}
 	}
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> 9d0da82ca6f7c5293cf22e4a1b987e908e7618ae
+
+
+
