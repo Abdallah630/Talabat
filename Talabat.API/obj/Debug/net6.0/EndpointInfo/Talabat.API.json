@@ -12,14 +12,7 @@
         ],
         "parameters": [
           {
-            "name": "sort",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "brandId",
+            "name": "PageSize",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -27,7 +20,37 @@
             }
           },
           {
-            "name": "categoryId",
+            "name": "search",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "PageIndex",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Sort",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "BrandId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "CategoryId",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -41,26 +64,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ProductToReturn"
-                  }
+                  "$ref": "#/components/schemas/ProductToReturnPagination"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ProductToReturn"
-                  }
+                  "$ref": "#/components/schemas/ProductToReturnPagination"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ProductToReturn"
-                  }
+                  "$ref": "#/components/schemas/ProductToReturnPagination"
                 }
               }
             }
@@ -325,6 +339,31 @@
           },
           "categories": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProductToReturnPagination": {
+        "type": "object",
+        "properties": {
+          "pageIndex": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProductToReturn"
+            },
             "nullable": true
           }
         },

@@ -22,7 +22,11 @@ namespace Talabat.Repository
 				query = query.OrderBy(specification.OrderBy);
 			else if(specification.OrderByDesc is not null) // P => P.Price
 				query = query.OrderByDescending(specification.OrderByDesc);
+			if (specification.PaginationEnabled)
+			 query= query.Skip(specification.Skip).Take(specification.Take);
+
 			
+
 			// _dbContext.set<TEntity>().where(p=>p.Id).Include()
 			query = specification.Include.Aggregate(query, (currentQuery, includeExpression) => currentQuery.Include(includeExpression));
 			// query = _dbContext.set<TEntity>().where(p => p.Id).Include(p => p.Brand)
