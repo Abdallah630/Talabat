@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Talabat.API.DTOs;
 using Talabat.API.Error;
+using Talabat.API.Helpers;
 using Talabat.Core.Generic.Contract;
 using Talabat.Core.Modules.ProductModule;
 using Talabat.Core.Specification;
@@ -29,11 +30,14 @@ namespace Talabat.API.Controllers
 		}
 
 		[HttpGet]
-		public async Task<ActionResult<IReadOnlyList<ProductToReturn>>> GetAll(string? sort,int? brandId,int? categoryId)
+		public async Task<ActionResult<Pagination<ProductToReturn>>> GetAll([FromQuery]productSpecParams specParams)
 		{
-			var spec = new ProductWithBrandAndCategorySpecification(sort,brandId,categoryId);
+			var spec = new ProductWithBrandAndCategorySpecification(specParams);
 			var product = await _proRepo.GetAllWithSpecAsync(spec);
-			return Ok(_mapper.Map<IReadOnlyList<Products>,IReadOnlyList<ProductToReturn>>(product));
+			var data = _mapper.Map<IReadOnlyList<Products>, IReadOnlyList<ProductToReturn>>(product);
+			var countSpec = new ProductsWithFilterationForCountSpecification(specParams);
+			var count = await _proRepo.GetCountAsync(countSpec);
+			return Ok(new Pagination<ProductToReturn>(specParams.PageIndex,specParams.PageSize,count,data));
 		}
 		//الممكن يرجع Responseتحديد شكل ال 
 		[ProducesResponseType(typeof(ProductToReturn),StatusCodes.Status200OK)]

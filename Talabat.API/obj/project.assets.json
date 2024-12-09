@@ -2602,7 +2602,7 @@
       "projectName": "Talabat.API",
       "projectPath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.API\\Talabat.API.csproj",
       "packagesPath": "C:\\Users\\Aboda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.API\\obj\\",
+      "outputPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
