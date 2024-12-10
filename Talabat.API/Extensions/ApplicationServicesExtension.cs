@@ -2,7 +2,7 @@
 using Talabat.API.Error;
 using Talabat.API.Helpers;
 using Talabat.Core.Generic.Contract;
-using Talabat.Repository;
+using Talabat.Repository.GenericRepo;
 
 namespace Talabat.API.Extensions
 {

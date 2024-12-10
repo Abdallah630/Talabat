@@ -9,11 +9,11 @@ using Talabat.Core.Modules.ProductModule;
 using Talabat.Core.Specification;
 using Talabat.Repository.Data;
 
-namespace Talabat.Repository
+namespace Talabat.Repository.GenericRepo
 {
 	public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
 	{
-       private readonly StoreContext _storeContext;
+		private readonly StoreContext _storeContext;
 
 		public GenericRepository(StoreContext storeContext)
 		{
@@ -25,7 +25,7 @@ namespace Talabat.Repository
 			return await _storeContext.Set<T>().ToListAsync();
 		}
 
-		
+
 		public async Task<T?> GetAsync(int id)
 		{
 			return await _storeContext.FindAsync<T>(id);
