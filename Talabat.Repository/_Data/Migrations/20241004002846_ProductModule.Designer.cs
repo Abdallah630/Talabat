@@ -4,13 +4,12 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Talabat.Repository.Data;
 
 #nullable disable
 
 namespace Talabat.Repository.Data.Migrations
 {
-    [DbContext(typeof(StoreContext))]
+	[DbContext(typeof(StoreContext))]
     [Migration("20241004002846_ProductModule")]
     partial class ProductModule
     {

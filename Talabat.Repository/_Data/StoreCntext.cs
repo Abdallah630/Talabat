@@ -11,18 +11,18 @@ namespace Talabat.Repository.Data
 {
 	public class StoreContext : DbContext
 	{
-        public StoreContext(DbContextOptions<StoreContext> options)
-            :base(options)
-        {
-        }
+		public StoreContext(DbContextOptions<StoreContext> options)
+			: base(options)
+		{
+		}
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 		}
 
-        public DbSet<Products> Products { get; set; }
-        public DbSet<ProductBrand> ProductBrand { get; set; }
-        public DbSet<ProductCategory> ProductCategory { get; set; }
-    }
+		public DbSet<Products> Products { get; set; }
+		public DbSet<ProductBrand> ProductBrand { get; set; }
+		public DbSet<ProductCategory> ProductCategory { get; set; }
+	}
 }

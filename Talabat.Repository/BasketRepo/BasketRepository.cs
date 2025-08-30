@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 using Talabat.Core.Generic.Contract;
 using Talabat.Core.Modules.BasketModule;
 
-namespace Talabat.Repository
+namespace Talabat.Repository.BasketRepo
 {
 	public class BasketRepository : IBasketRepository
 	{
-	    private readonly IDatabase _database;
+		private readonly IDatabase _database;
 
 		public BasketRepository(IConnectionMultiplexer redis)
 		{
@@ -23,13 +23,13 @@ namespace Talabat.Repository
 		public async Task<CustomerBasket?> GetBasketAsync(string BasketId)
 		{
 			var basket = await _database.StringGetAsync(BasketId);
-			return basket.IsNullOrEmpty ? null : JsonSerializer.Deserialize<CustomerBasket>(BasketId);
+			return basket.IsNullOrEmpty ? null : JsonSerializer.Deserialize<CustomerBasket>(basket);
 		}
 
 
 		public async Task<CustomerBasket?> UpdateBasketAsync(CustomerBasket Basket)
 		{
-			var createOrUpdate = await _database.StringSetAsync(Basket.Id,JsonSerializer.Serialize(Basket),TimeSpan.FromDays(30));
+			var createOrUpdate = await _database.StringSetAsync(Basket.Id, JsonSerializer.Serialize(Basket), TimeSpan.FromDays(30));
 			if (!createOrUpdate) return null;
 			return await GetBasketAsync(Basket.Id);
 		}

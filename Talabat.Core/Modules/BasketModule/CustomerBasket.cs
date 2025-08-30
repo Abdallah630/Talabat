@@ -9,12 +9,15 @@ namespace Talabat.Core.Modules.BasketModule
 	public class CustomerBasket
 	{
 		public string Id { get; set; }
-		public List<BasketItem> BasketItems { get; set; }
-		public CustomerBasket(string id, List<BasketItem> basketItems)
+		public List<BasketItem> Items { get; set; } = null!;
+		public CustomerBasket(string id)
 		{
 			Id = id;
-			BasketItems = basketItems;
+			Items = new List<BasketItem>();
 		}
 
+		public CustomerBasket()
+		{
+		}
 	}
 }
