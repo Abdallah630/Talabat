@@ -36,7 +36,7 @@ namespace Talabat.Repository.Data.Config
 			builder.HasOne(p => p.Categories)
 				.WithMany()
 				.HasForeignKey(p => p.CategoryId);
-				
+
 
 		}
 	}

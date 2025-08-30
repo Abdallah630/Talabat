@@ -5,6 +5,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Talabat.Core.Modules.ProductModule;
+using Talabat.Repository.Data;
 
 namespace Talabat.Repository.Data.DataSeed
 {
@@ -42,7 +43,7 @@ namespace Talabat.Repository.Data.DataSeed
 						_dbContext.Set<ProductCategory>().Add(category);
 					}
 					await _dbContext.SaveChangesAsync();
-				} 
+				}
 			}
 			if (_dbContext.Products.Count() == 0)
 			{
@@ -57,7 +58,7 @@ namespace Talabat.Repository.Data.DataSeed
 						_dbContext.Set<Products>().Add(product);
 					}
 					await _dbContext.SaveChangesAsync();
-				} 
+				}
 			}
 		}
 	}

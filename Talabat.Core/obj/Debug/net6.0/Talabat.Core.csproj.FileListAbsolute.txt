@@ -22,3 +22,4 @@ C:\Users\Aboda\source\repos\Abdallah630\Talabat\Talabat.Core\obj\Debug\net6.0\Ta
 C:\Users\Aboda\source\repos\Abdallah630\Talabat\Talabat.Core\obj\Debug\net6.0\refint\Talabat.Core.dll
 C:\Users\Aboda\source\repos\Abdallah630\Talabat\Talabat.Core\obj\Debug\net6.0\Talabat.Core.pdb
 C:\Users\Aboda\source\repos\Abdallah630\Talabat\Talabat.Core\obj\Debug\net6.0\ref\Talabat.Core.dll
+C:\Users\Aboda\Source\Repos\Abdallah630\Talabat\Talabat.Core\obj\Debug\net6.0\Talabat.Core.csproj.AssemblyReference.cache
