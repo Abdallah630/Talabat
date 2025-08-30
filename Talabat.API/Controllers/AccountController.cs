@@ -15,7 +15,7 @@ namespace Talabat.API.Controllers
 		private readonly SignInManager<ApplicationUser> _signInManager;
 
 		public AccountController(
-			UserManager<ApplicationUser> userManager, 
+			UserManager<ApplicationUser> userManager,
 			SignInManager<ApplicationUser> signInManager)
 		{
 			_userManager = userManager;
@@ -34,6 +34,28 @@ namespace Talabat.API.Controllers
 				Email = user.Email,
 				Token = "This will be token"
 			});
+		}
+		[HttpPost("register")]
+		public async Task<ActionResult<UserDto>> Register(RegisterDto model)
+		{
+			var user = new ApplicationUser()
+			{
+				DisplayName = model.DisplayName,
+				Email = model.Email,
+				UserName = model.Email.Split("@")[0],
+				PhoneNumber = model.PhoneNumber
+
+			};
+			var result = await _userManager.CreateAsync(user, model.Password);
+			if (!result.Succeeded) return BadRequest(new ApiValidationResponse() { Errors = result.Errors.Select(e => e.Description) });
+			return Ok(new UserDto()
+			{
+				DisplayName = user.DisplayName,
+				Email = user.Email,
+				Token = "this will be token"
+
+			});
+
 		}
 	}
 }
