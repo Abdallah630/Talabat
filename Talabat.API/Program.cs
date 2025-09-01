@@ -14,6 +14,7 @@ using Talabat.Repository.BasketRepo;
 using Talabat.Repository.Data;
 using Talabat.Repository.Data.DataSeed;
 using Talabat.Repository.GenericRepo;
+using Talabat.Service.AuthService;
 
 namespace Talabat.API
 {
@@ -49,7 +50,7 @@ namespace Talabat.API
 
 			}).AddEntityFrameworkStores<ApplicationIdentityDbContext>();
 			builder.Services.AddApplicationServices();
-
+			builder.Services.AddScoped(typeof(IAuthService), typeof(AuthService));
 			builder.Services.AddScoped(typeof(IBasketRepository), typeof(BasketRepository));
 			builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 			builder.Services.AddAutoMapper(typeof(MappingProfile));
