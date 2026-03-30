@@ -10,7 +10,7 @@ using Talabat.Core.Generic.Contract;
 using Talabat.Core.Identity;
 using Talabat.Repository._Identity;
 using Talabat.Repository._Identity.DataSeed;
-using Talabat.Repository.BasketRepo;
+using Talabat.Repository.BasketRepo; 
 using Talabat.Repository.Data;
 using Talabat.Repository.Data.DataSeed;
 using Talabat.Repository.GenericRepo;

@@ -11,8 +11,8 @@ wwwroot\images\products\iced-cafe-latte.png
 wwwroot\images\products\iced-caramel-macchiato.png
 wwwroot\images\products\iced-chai-tea-latte-with-oleato-golden-foam.png
 wwwroot\images\products\iced-london-fog-tea-latte.png
-wwwroot\images\products\iced-matcha.png
 wwwroot\images\products\iced-matcha-latte.png
+wwwroot\images\products\iced-matcha.png
 wwwroot\images\products\turkey-bacon-cheddar-and-egg-white-sandwich.png
-wwwroot\images\products\white-chocolate-mocha.png
 wwwroot\images\products\white-chocolate-mocha-frappuccino.png
+wwwroot\images\products\white-chocolate-mocha.png

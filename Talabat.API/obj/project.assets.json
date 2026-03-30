@@ -3256,11 +3256,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.API\\Talabat.API.csproj",
+      "projectUniqueName": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.API\\Talabat.API.csproj",
       "projectName": "Talabat.API",
-      "projectPath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.API\\Talabat.API.csproj",
+      "projectPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.API\\Talabat.API.csproj",
       "packagesPath": "C:\\Users\\Aboda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.API\\obj\\",
+      "outputPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3281,11 +3281,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Repository\\Talabat.Repository.csproj": {
-              "projectPath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Repository\\Talabat.Repository.csproj"
+            "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Repository\\Talabat.Repository.csproj": {
+              "projectPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Repository\\Talabat.Repository.csproj"
             },
-            "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj": {
-              "projectPath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj"
+            "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj": {
+              "projectPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj"
             }
           }
         }
@@ -3300,7 +3300,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net6.0": {
@@ -3344,8 +3344,20 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AutoMapper' 13.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
