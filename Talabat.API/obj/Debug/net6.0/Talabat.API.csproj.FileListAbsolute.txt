@@ -169,3 +169,4 @@ C:\Users\Aboda\Source\Repos\Abdallah630\Talabat\Talabat.API\bin\Debug\net6.0\Mic
 C:\Users\Aboda\Source\Repos\Abdallah630\Talabat\Talabat.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\Aboda\Source\Repos\Abdallah630\Talabat\Talabat.API\bin\Debug\net6.0\Talabat.Service.dll
 C:\Users\Aboda\Source\Repos\Abdallah630\Talabat\Talabat.API\bin\Debug\net6.0\Talabat.Service.pdb
+C:\Users\Aboda\source\repos\Abdallah630\Talabat\Talabat.API\obj\Debug\net6.0\swae.build.ex.cache

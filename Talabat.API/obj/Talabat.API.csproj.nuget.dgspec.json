@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.API\\Talabat.API.csproj": {}
+    "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.API\\Talabat.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.API\\Talabat.API.csproj": {
+    "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.API\\Talabat.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.API\\Talabat.API.csproj",
+        "projectUniqueName": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.API\\Talabat.API.csproj",
         "projectName": "Talabat.API",
-        "projectPath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.API\\Talabat.API.csproj",
+        "projectPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.API\\Talabat.API.csproj",
         "packagesPath": "C:\\Users\\Aboda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.API\\obj\\",
+        "outputPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Repository\\Talabat.Repository.csproj": {
-                "projectPath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Repository\\Talabat.Repository.csproj"
+              "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Repository\\Talabat.Repository.csproj": {
+                "projectPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Repository\\Talabat.Repository.csproj"
               },
-              "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj": {
-                "projectPath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj"
+              "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj": {
+                "projectPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj"
               }
             }
           }
@@ -51,7 +51,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net6.0": {
@@ -95,18 +95,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Core\\Talabat.Core.csproj": {
+    "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Core\\Talabat.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Core\\Talabat.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Core\\Talabat.Core.csproj",
         "projectName": "Talabat.Core",
-        "projectPath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Core\\Talabat.Core.csproj",
+        "projectPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Core\\Talabat.Core.csproj",
         "packagesPath": "C:\\Users\\Aboda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Core\\obj\\",
+        "outputPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -139,7 +139,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net6.0": {
@@ -166,18 +166,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Repository\\Talabat.Repository.csproj": {
+    "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Repository\\Talabat.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Repository\\Talabat.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Repository\\Talabat.Repository.csproj",
         "projectName": "Talabat.Repository",
-        "projectPath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Repository\\Talabat.Repository.csproj",
+        "projectPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Repository\\Talabat.Repository.csproj",
         "packagesPath": "C:\\Users\\Aboda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Repository\\obj\\",
+        "outputPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -198,8 +198,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Core\\Talabat.Core.csproj": {
-                "projectPath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Core\\Talabat.Core.csproj"
+              "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Core\\Talabat.Core.csproj": {
+                "projectPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Core\\Talabat.Core.csproj"
               }
             }
           }
@@ -214,7 +214,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net6.0": {
@@ -245,18 +245,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj": {
+    "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj",
         "projectName": "Talabat.Service",
-        "projectPath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj",
+        "projectPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Service\\Talabat.Service.csproj",
         "packagesPath": "C:\\Users\\Aboda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Service\\obj\\",
+        "outputPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -277,8 +277,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Core\\Talabat.Core.csproj": {
-                "projectPath": "C:\\Users\\Aboda\\Source\\Repos\\Abdallah630\\Talabat\\Talabat.Core\\Talabat.Core.csproj"
+              "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Core\\Talabat.Core.csproj": {
+                "projectPath": "C:\\Users\\Aboda\\source\\repos\\Abdallah630\\Talabat\\Talabat.Core\\Talabat.Core.csproj"
               }
             }
           }
@@ -293,7 +293,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net6.0": {
@@ -320,7 +320,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
